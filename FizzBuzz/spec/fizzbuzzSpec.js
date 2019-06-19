@@ -23,5 +23,9 @@ describe('Fizz Buzz Function', function () {
             var result = fizzBuzz(2);
             expect(result).toBe(2)
         });
+        it('should return error if anything but a number it placed', () => {
+            var result = fizzBuzz('hi');
+            expect(result).toBe('Error!')
+        });
     })
 })
